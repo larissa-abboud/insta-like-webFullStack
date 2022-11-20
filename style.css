@@ -1,0 +1,769 @@
+:root {/*starting line 529 you can change things*/
+
+    --color-sage-01: #f3f4f0;
+    --color-sage-02: #DBDED3;
+    --color-sage-03: #C4C9B5;
+    --color-sage-04: #ABB398;
+    --color-sage-05: #939D7B;
+    --color-teal-01: #EFFAF9;
+    --color-teal-02: #DAF7F3;
+    --color-teal-03: #C5F2EC;
+    --color-teal-04: #97EFE3;
+    --color-teal-05: #72DFD0;
+    --color-yellow-01: #FEFBE7;
+    --color-yellow-02: #FDF5B0;
+    --color-yellow-03: #FBEF7E;
+    --color-yellow-04: #F3DD1B;
+    --color-yellow-05: #DFCA0C;
+    --color-darkgreen-01: #5998A6;
+    --color-darkgreen-02: #477A85;
+    --color-darkgreen-03: #2E606B;
+    --color-darkgreen-04: #1A444D;
+    --color-darkgreen-05: #173036;
+    --color-red-01: #FEF7F6;
+    --color-red-02: #F4C3BE;
+    --color-red-02_5: #F0AEA8;
+    --color-red-03: #EE6E62;
+    --color-red-04: #E5594C;
+    --color-red-05: #BF4A40;
+    --color-greyscale-01: #fff;
+    --color-greyscale-02: #d9d9d9;
+    --color-greyscale-03: #7f7f7f;
+    --color-greyscale-04: #585858;
+    --color-greyscale-05: #000;
+    --color-darkmode-01: #a9bcf9;
+    --color-darkmode-02: #3852a8;
+    --color-darkmode-03: #404864;
+    --color-darkmode-04: #2a2f41;
+    --color-darkmode-05: #191c27;
+    --color-darkmode-06: #fff;
+    --color-special-kirk-blue: #7593fe;
+    --color-special-notification-green: #00cd72;
+    --color-special-information-yellow: var(--color-yellow-01);
+    --color-special-error-red: var(--color-red-05);
+    --color-special-numeric-red: red;
+    --color-special-numeric-green: green;
+    --color-palette-legacy-frontend: 1;
+    --color-actionsheet-menu-background: var(--color-teal-01);
+    --color-actionsheet-menu-border: var(--color-border-dark);
+    --color-actionsheet-menu-delete-background: var(--color-red-01);
+    --color-actionsheet-menu-delete: var(--color-text);
+    --color-advanced-search-hover: var(--color-red-04);
+    --color-advanced-search-divider: var(--color-teal-03);
+    --color-advanced-search: var(--color-red-03);
+    --color-background-actionsheet-notebook: var(--color-darkgreen-04);
+    --color-background-actionsheet: var(--color-greyscale-01);
+    --color-background-bookmarklet: var(--color-teal-02);
+    --color-background-card-sidebar: var(--color-teal-01);
+    --color-background-card: transparent;
+    --color-background-card: var(--color-greyscale-01);
+    --color-background-clicker-active: var(--color-teal-05);
+    --color-background-clicker-delete: var(--color-red-01);
+    --color-background-clicker-delete-hover: var(--color-red-02);
+    --color-background-clicker-hover: var(--color-teal-05);
+    --color-background-clicker: var(--color-teal-04);
+    --color-background-comment: var(--color-greyscale-01);
+    --color-background-comment-reply: var(--color-sage-01);
+    --color-background-count: var(--color-teal-02);
+    --color-background-dark-link: var(--color-teal-04);
+    --color-background-dark-text: var(--color-greyscale-01);
+    --color-background-dark: var(--color-darkgreen-04);
+    --color-background-elevated: var(--color-sage-01);
+    --color-background-forum-draft: var(--color-background-forum-posts);
+    --color-background-forum-posts: transparent;
+    --color-background-highlighted-brighter: var(--color-teal-01);
+    --color-background-highlighted: var(--color-teal-02);
+    --color-background-hover: var(--color-teal-01);
+    --color-background-infobox-title: var(--color-yellow-02);
+    --color-background-input: var(--color-greyscale-01);
+    --color-background-inset-content: var(--color-teal-01);
+    --color-background-menu: var(--color-greyscale-01);
+    --color-background-navigation-dropdown: var(--color-greyscale-01);
+    --color-background-organizer-selected: var(--color-red-04);
+    --color-background-photo: transparent;
+    --color-background-secondary-navbar: var(--color-greyscale-01);
+    --color-background-select-hover: var(--color-teal-01);
+    --color-background-select: var(--color-greyscale-01);
+    --color-background-selected: var(--color-teal-02);
+    --color-background-sidebar-selected: var(--color-teal-02);
+    --color-background-sidebar-inset: var(--color-background);
+    --color-background-sidebar: var(--color-teal-01);
+    --color-background-table-alternate: #f3f3f3;
+    --color-background-table-hover: var(--color-yellow-02);
+    --color-background-table: transparent;
+    --color-background-window: var(--color-greyscale-01);
+    --color-background: var(--color-greyscale-01);
+    --color-blockquote: var(--color-teal-01);
+    --color-border-black: var(--color-greyscale-05);
+    --color-border-clicker: var(--color-border);
+    --color-border-dark: var(--color-greyscale-05);
+    --color-border-forum-thread-header: var(--color-greyscale-02);
+    --color-border-forum-thread: var(--color-greyscale-02);
+    --color-border-image: var(--color-greyscale-03);
+    --color-border-understated: #ccc;
+    --color-border-light: var(--color-border-understated);
+    --color-border-logo-image: transparent;
+    --color-border-tabular-data: #d9d9d9;
+    --color-border: var(--color-greyscale-05);
+    --color-breadcrumbs-tools: var(--color-teal-01);
+    --color-bubble-background: var(--color-greyscale-01);
+    --color-buy-option-background: var(--color-sage-01);
+    --color-buy-option-border: #ddd;
+    --color-buy-option-button-border: #999;
+    --color-chip-background-hover: var(--color-teal-02);
+    --color-chip-background: var(--color-teal-01);
+    --color-chip-negated-background: var(--color-red-01);
+    --color-chip-selected-background: var(--color-teal-03);
+    --color-chip-border: var(--color-border);
+    --color-chip-text: var(--color-text);
+    --color-clicker-advanced-search: var(--color-greyscale-05);
+    --color-core-item-label: #666666;
+    --color-dialog-error-background: var(--color-red-01);
+    --color-dialog-error-border: var(--color-red-05);
+    --color-dialog-neutral-background: var(--color-teal-01);
+    --color-dialog-neutral-border: var(--color-teal-05);
+    --color-dialog-success-background: var(--color-sage-01);
+    --color-dialog-success-border: var(--color-sage-05);
+    --color-dialog-warning-background: var(--color-yellow-01);
+    --color-dialog-warning-border: var(--color-yellow-05);
+    --color-error-box: var(--color-red-01);
+    --color-error-message: var(--color-red-05);
+    --color-error: var(--color-special-error-red);
+    --color-forum-board-table-border: var(--color-table-border);
+    --color-forum-board-table-header-border: var(--color-forum-board-table-border);
+    --color-forum-parent-post: var(--color-teal-01);
+    --color-forum-reaction: var(--color-greyscale-04);
+    --color-forum-reaction-marked: var(--color-greyscale-04);
+    --color-forum-tip-background: var(--color-yellow-01);
+    --color-forum-tip: var(--color-text);
+    --color-icon-framed-background: var(--color-greyscale-01);
+    --color-infobox-border: var(--color-border);
+    --color-infobox-content-border: var(--color-border);
+    --color-infobox-content: var(--color-greyscale-01);
+    --color-infobox-sidebar-background: var(--color-greyscale-01);
+    --color-infobox-title-border: var(--color-border);
+    --color-information-box: var(--color-special-information-yellow);
+    --color-image-selected: var(--color-yellow-04);
+    --color-input-background: var(--color-greyscale-01);
+    --color-input-calendar-background: var(--color-background);
+    --color-input-custom-background: var(--color-greyscale-01);
+    --color-input-custom: var(--color-text);
+    --color-input-focus: rgb(239, 250, 249);
+    --color-input-reposition-background: var(--color-sage-01);
+    --color-input-reposition-border: var(--color-sage-05);
+    --color-input: unset;
+    --color-link-button-hover: var(--color-teal-01);
+    --color-link-default-filter: brightness(0) saturate(100%) invert(31%) sepia(27%) saturate(784%) hue-rotate(143deg) brightness(99%) contrast(90%);
+    --color-link-default-hover-filter: brightness(0) saturate(100%) invert(24%) sepia(25%) saturate(834%) hue-rotate(143deg) brightness(92%) contrast(101%);
+    --color-link-default-hover: var(--color-darkgreen-04);
+    --color-link-default: var(--color-darkgreen-03);
+    --color-link-delete-hover: var(--color-red-05);
+    --color-link-delete: var(--color-red-05);
+    --color-link-visited: var(--color-greyscale-04);
+    --color-overlay-dim: rgba(0, 0, 0, 0.25);
+    --color-markdown-spoiler: var(--color-greyscale-02);
+    --color-markdown-toolbar-background: var(--color-teal-01);
+    --color-markdown-toolbar: var(--color-text);
+    --color-message-unread-background: var(--color-background-table);
+    --color-message-unread: #333;
+    --color-message-unread-mobile: var(--color-teal-01);
+    --color-modal-background: var(--color-greyscale-01);
+    --color-modal-footer-background: var(--color-sage-01);
+    --color-modal-photo-background: var(--color-greyscale-01);
+    --color-nameplate-background: #f7f7f7;
+    --color-navigation-background: var(--color-sage-01);
+    --color-navigation-bottom-border: var(--color-border-dark);
+    --color-navigation-hover: var(--color-teal-01);
+    --color-navigation-indicator-snake: var(--color-greyscale-05);
+    --color-navigation-mobile-background: var(--color-teal-01);
+    --color-navigation-notebook-dropdown-background: var(--color-darkgreen-04);
+    --color-navigation-notebook-dropdown-hover: var(--color-darkgreen-02);
+    --color-navigation-notebook-dropdown: var(--color-sage-01);
+    --color-navigation-notification-background: var(--color-greyscale-01);
+    --color-navigation-notification: var(--color-text);
+    --color-navigation-snake-notebook: var(--color-darkgreen-04);
+    --color-navigation-snake-search: var(--color-darkgreen-01);
+    --color-navigation-snake: var(--color-darkgreen-01);
+    --color-notebook-subnavigation-background: var(--color-darkgreen-04);
+    --color-notes-personal-background: #eee;
+    --color-paging-active: var(--color-teal-05);
+    --color-paging-border: var(--color-border-dark);
+    --color-paging-hover: var(--color-teal-05);
+    --color-paging-inactive: var(--color-teal-02);
+    --color-placeholder-gray: var(--color-greyscale-02);
+    --color-popover-background: var(--color-greyscale-01);
+    --color-pro-highlight: var(--color-yellow-02);
+    --color-redeem-background: var(--color-teal-02);
+    --color-search-filter-entry-background: var(--color-greyscale-01);
+    --color-search-subnavigation-background: var(--color-greyscale-01);
+    --color-secondary-navigation-menu-background: var(--color-greyscale-01);
+    --color-secondary-navigation-notebook-background: var(--color-darkgreen-02);
+    --color-secondary-navigation-notebook-indicator: var(--color-darkgreen-01);
+    --color-secondary-navigation-notebook-text: var(--color-text-reverse);
+    --color-secondary-navigation-reverse-background: var(--color-darkgreen-04);
+    --color-secondary-navigation-reverse-border: var(--color-darkgreen-04);
+    --color-secondary-navigation-reverse-indicator: var(--color-darkgreen-01);
+    --color-secondary-navigation-reverse-text: var(--color-sage-01);
+    --color-selectable-background: var(--color-teal-01);
+    --color-selectable-selected-background: var(--color-teal-02);
+    --color-sticky-note-background: var(--color-yellow-01);
+    --color-subnavigation-active-underline: var(--color-red-03);
+    --color-subnavigation-background: var(--color-sage-02);
+    --color-subnavigation-bottom-border: var(--color-border-dark);
+    --color-table-border: var(--color-border-dark);
+    --color-table-element-background: var(--color-greyscale-01);
+    --color-table-header: var(--color-teal-02);
+    --color-table-header-border: var(--color-border-dark);
+    --color-table-hover: var(--color-teal-01);
+    --color-table-row-border: var(--color-greyscale-02);
+    --color-tabs-mobile-background: var(--color-teal-01);
+    --color-text-active: var(--color-text);
+    --color-text-cancel-hover: var(--color-border-dark);
+    --color-text-cancel: var(--color-greyscale-04);
+    --color-text-clicker: var(--color-border-dark);
+    --color-text-dark: var(--color-greyscale-05);
+    --color-text-darker-gray: var(--color-greyscale-03);
+    --color-text-less-understated: var(--color-greyscale-04);
+    --color-text-more-understated: #727272;
+    --color-text-reverse: var(--color-greyscale-01);
+    --color-text-selected: var(--color-darkgreen-01);
+    --color-text-understated-reverse: var(--color-greyscale-02);
+    --color-text-understated: var(--color-greyscale-04);
+    --color-text-overstated: var(--color-greyscale-05);
+    --color-text: var(--color-greyscale-05);
+    --color-toggle-selected: var(--color-teal-01);
+    --color-tooltip-background: #fafafa;
+    --color-tooltip-border: #d4d4d4;
+    --color-tooltip: #333;
+    --color-translation-highlight: var(--color-yellow-02);
+    --color-translation-translated-highlight: var(--color-teal-03);
+    --color-vertical-form-input-background: var(--color-greyscale-01);
+    --color-actionsheet-title: var(--color-darkgreen-04);
+    --color-form-toggle-button: var(--color-greyscale-01);
+    --color-form-toggle-button-background: var(--color-greyscale-02);
+    --color-form-toggle-button-active-background: var(--color-darkgreen-01);
+    --color-iconbar-background: var(--color-darkgreen-04);
+    --color-iconbar: var(--color-teal-04);
+    --color-forum-magic-link-background: var(--color-yellow-01);
+    --color-forum-magic-link-border: var(--color-greyscale-02);
+    --global-box-shadow-size: 4px;
+    --global-box-shadow-reversed-size: -4px;
+    --line-height-base: 1.5714;
+    --line-height-base-rem: 1.625rem;
+    --line-height-base-em: 1.625rem;
+
+    --transition-duration-1: 0.1s;
+    --transition-duration-2: 0.2s;
+    --transition-duration-3: 0.3s;
+    --transition-duration-5: 0.5s;
+    --transition-duration-7: 0.7s;
+    --transition-duration-10: 1s;
+    --misc-forum-box-shadow-allowance: 7px
+}
+body.theme_herdwick {
+    --global-box-shadow-size: 0px;
+    --global-box-shadow-reversed-size: -1px;
+    --color-advanced-search-hover: var(--color-red-02_5);
+    --color-advanced-search-divider: #767676;
+    --color-advanced-search: var(--color-red-02);
+    --color-background-actionsheet: var(--color-background);
+    --color-background-card-sidebar: var(--color-greyscale-01);
+    --color-background-card: var(--color-greyscale-01);
+    --color-background-clicker-hover: var(--color-teal-03);
+    --color-background-clicker: var(--color-teal-02);
+    --color-background-comment: var(--color-greyscale-01);
+    --color-background-count: var(--color-greyscale-01);
+    --color-background-elevated: var(--color-greyscale-01);
+    --color-background-forum-draft: var(--color-greyscale-01);
+    --color-background-forum-posts: var(--color-greyscale-01);
+    --color-background-hover: var(--color-greyscale-01);
+    --color-background-infobox-title: var(--color-yellow-01);
+    --color-background-input: var(--color-greyscale-01);
+    --color-background-inset-content: var(--color-greyscale-01);
+    --color-background-organizer-selected: var(--color-red-02);
+    --color-background-photo: var(--color-greyscale-01);
+    --color-background-sidebar: var(--color-greyscale-01);
+    --color-background-table-alternate: var(--color-greyscale-01);
+    --color-background-table: var(--color-greyscale-01);
+    --color-background-window: var(--color-greyscale-01);
+    --color-background: #f7f7f7;
+    --color-border-logo-image: #000;
+    --color-border-tabular-data: #707070;
+    --color-breadcrumbs-tools: #f7f7f7;
+    --color-core-item-label: #707070;
+    --color-input-background: var(--color-greyscale-01);
+    --color-input-focus: var(--color-yellow-01);
+    --color-link-button-hover: var(--color-greyscale-01);
+    --color-navigation-background: var(--color-greyscale-01);
+    --color-navigation-notification-background: var(--color-teal-02);
+    --color-paging-active: var(--color-teal-04);
+    --color-paging-hover: var(--color-teal-03);
+    --color-paging-inactive: var(--color-teal-02);
+    --color-redeem-background: var(--color-background);
+    --color-search-subnavigation-background: var(--color-greyscale-01);
+    --color-tabs-mobile-background: var(--color-greyscale-01);
+
+    --misc-forum-box-shadow-allowance: 0
+}
+body.theme_hebridean {
+    --global-box-shadow-size: 0px;
+    --global-box-shadow-reversed-size: -1px;
+    --color-border: var(--color-darkmode-06);
+    --color-text: rgba(255, 255, 255, 0.8);
+    --color-special-error-red: var(--color-red-02);
+    --color-actionsheet-menu-background: var(--color-background);
+    --color-actionsheet-menu-border: transparent;
+    --color-actionsheet-menu-delete-background: var(--color-background);
+    --color-actionsheet-menu-delete: var(--color-red-02);
+    --color-advanced-search-hover: var(--color-background-clicker-hover);
+    --color-advanced-search-divider: var(--color-darkmode-03);
+    --color-advanced-search: var(--color-background-clicker);
+    --color-background-actionsheet-notebook: var(--color-darkmode-04);
+    --color-background-actionsheet: var(--color-background);
+    --color-background-bookmarklet: var(--color-darkmode-03);
+    --color-background-card-sidebar: var(--color-darkmode-04);
+    --color-background-card: var(--color-darkmode-04);
+    --color-background-clicker-active: var(--color-darkmode-04);
+    --color-background-clicker-delete: var(--color-background-clicker);
+    --color-background-clicker-delete-hover: var(--color-background-clicker);
+    --color-background-clicker-hover: var(--color-darkmode-03);
+    --color-background-clicker: var(--color-darkmode-02);
+    --color-background-comment-reply: var(--color-darkmode-04);
+    --color-background-comment: var(--color-darkmode-04);
+    --color-background-count: var(--color-darkmode-03);
+    --color-background-dark-link: var(--color-link-default);
+    --color-background-dark-text: var(--color-text);
+    --color-background-dark: var(--color-darkmode-04);
+    --color-background-elevated: var(--color-background);
+    --color-background-forum-draft: var(--color-background-window);
+    --color-background-forum-posts: var(--color-background);
+    --color-background-highlighted-brighter: var(--color-darkmode-02);
+    --color-background-highlighted: var(--color-darkmode-03);
+    --color-background-hover: var(--color-darkmode-03);
+    --color-background-infobox-title: var(--color-darkmode-05);
+    --color-background-input: var(--color-background);
+    --color-background-inset-content: var(--color-darkmode-04);
+    --color-background-menu: var(--color-background);
+    --color-background-navigation-dropdown: var(--color-darkmode-05);
+    --color-background-organizer-selected: var(--color-background-selected);
+    --color-background-photo: var(--color-background);
+    --color-background-secondary-navbar: var(--color-background);
+    --color-background-select-hover: var(--color-darkmode-03);
+    --color-background-select: var(--color-background);
+    --color-background-selected: var(--color-darkmode-04);
+    --color-background-sidebar-inset: var(--color-background-sidebar);
+    --color-background-sidebar: var(--color-darkmode-04);
+    --color-background-sidebar-selected: var(--color-darkmode-03);
+    --color-background-table-alternate: var(--color-background);
+    --color-background-table-hover: var(--color-darkmode-03);
+    --color-background-table: var(--color-background);
+    --color-background-window: var(--color-darkmode-04);
+    --color-background: var(--color-darkmode-05);
+    --color-blockquote: var(--color-darkmode-03);
+    --color-border-clicker: var(--color-border);
+    --color-border-dark: var(--color-border);
+    --color-border-forum-thread-header: var(--color-darkmode-03);
+    --color-border-forum-thread: var(--color-darkmode-03);
+    --color-border-image: var(--color-border);
+    --color-border-light: var(--color-border);
+    --color-border-logo-image: transparent;
+    --color-border-understated: var(--color-darkmode-03);
+    --color-border-tabular-data: var(--color-darkmode-03);
+    --color-breadcrumbs-tools: transparent;
+    --color-bubble-background: var(--color-background);
+    --color-buy-option-background: var(--color-darkmode-04);
+    --color-buy-option-border: var(--color-border);
+    --color-buy-option-button-background: var(--color-darkmode-02);
+    --color-buy-option-button-border: var(--color-border);
+    --color-chip-background-hover: var(--color-darkmode-03);
+    --color-chip-background: var(--color-darkmode-02);
+    --color-chip-negated-background: var(--color-red-05);
+    --color-chip-selected-background: var(--color-darkmode-04);
+    --color-chip-border: var(--color-border);
+    --color-chip-text: var(--color-text);
+    --color-clicker-advanced-search: var(--color-text);
+    --color-core-item-label: var(--color-text-understated);
+    --color-dialog-error-background: var(--color-darkmode-04);
+    --color-dialog-error-border: var(--color-darkmode-01);
+    --color-dialog-neutral-background: var(--color-darkmode-04);
+    --color-dialog-neutral-border: var(--color-darkmode-01);
+    --color-dialog-success-background: var(--color-darkmode-04);
+    --color-dialog-success-border: var(--color-darkmode-01);
+    --color-dialog-warning-background: var(--color-darkmode-04);
+    --color-dialog-warning-border: var(--color-darkmode-01);
+    --color-error-box: var(--color-red-02);
+    --color-error-message: var(--color-red-02);
+    --color-error: var(--color-red-02);
+    --color-forum-board-table-border: var(--color-table-border);
+    --color-forum-board-table-header-border: var(--color-table-header-border);
+    --color-forum-parent-post: var(--color-darkmode-04);
+    --color-forum-reaction: var(--color-text-understated);
+    --color-forum-reaction-marked: var(--color-text-overstated);
+    --color-forum-tip-background: var(--color-darkmode-03);
+    --color-icon-framed-background: var(--color-background);
+    --color-image-selected: var(--color-darkmode-01);
+    --color-infobox-border: var(--color-border);
+    --color-infobox-content-border: var(--color-border);
+    --color-infobox-content: var(--color-darkmode-05);
+    --color-infobox-sidebar-background: var(--color-background);
+    --color-infobox-title-border: var(--color-border);
+    --color-information-box: var(--color-background);
+    --color-input-background: var(--color-background);
+    --color-input-calendar-background: var(--color-darkmode-04);
+    --color-input-custom-background: var(--color-background);
+    --color-input-custom: var(--color-text);
+    --color-input-focus: var(--color-darkmode-03);
+    --color-input-reposition-background: var(--color-darkmode-03);
+    --color-input-reposition-border: var(--color-border);
+    --color-input: var(--color-text);
+    --color-link-button-hover: var(--color-darkmode-02);
+    --color-link-default-filter: brightness(0) saturate(100%) invert(66%) sepia(33%) saturate(404%) hue-rotate(190deg) brightness(106%) contrast(95%);
+    --color-link-default-hover-filter: brightness(0) saturate(100%) invert(71%) sepia(65%) saturate(4818%) hue-rotate(203deg) brightness(102%) contrast(99%);
+    --color-link-default-hover: var(--color-special-kirk-blue);
+    --color-link-default: var(--color-darkmode-01);
+    --color-link-delete-hover: var(--color-red-02);
+    --color-link-delete: var(--color-red-02);
+    --color-link-visited: var(--color-special-kirk-blue);
+    --color-markdown-spoiler: var(--color-darkmode-03);
+    --color-markdown-toolbar-background: var(--color-background);
+    --color-markdown-toolbar: var(--color-link-default);
+    --color-message-unread: var(--color-link-default);
+    --color-message-unread-mobile: var(--color-background-table);
+    --color-modal-background: var(--color-darkmode-04);
+    --color-modal-footer-background: var(--color-darkmode-03);
+    --color-modal-photo-background: var(--color-background);
+    --color-nameplate-background: var(--color-darkmode-05);
+    --color-navigation-background: var(--color-darkmode-05);
+    --color-navigation-bottom-border: var(--color-border);
+    --color-navigation-hover: var(--color-darkmode-03);
+    --color-navigation-indicator-snake: var(--color-darkmode-01);
+    --color-navigation-mobile-background: var(--color-darkmode-04);
+    --color-navigation-notebook-dropdown-background: var(--color-background);
+    --color-navigation-notebook-dropdown-hover: var(--color-background-select-hover);
+    --color-navigation-notebook-dropdown: var(--color-text);
+    --color-navigation-notification-background: var(--color-darkmode-03);
+    --color-navigation-notification: var(--color-text);
+    --color-navigation-snake-notebook: var(--color-darkmode-01);
+    --color-navigation-snake-search: var(--color-darkmode-01);
+    --color-navigation-snake: var(--color-darkmode-01);
+    --color-notes-personal-background: var(--color-darkmode-03);
+    --color-paging-active: transparent;
+    --color-paging-border: transparent;
+    --color-paging-hover: transparent;
+    --color-paging-inactive: transparent;
+    --color-placeholder-gray: var(--color-darkmode-04);
+    --color-popover-background: var(--color-background);
+    --color-pro-highlight: var(--color-darkmode-01);
+    --color-redeem-background: var(--color-background);
+    --color-search-filter-entry-background: var(--color-darkmode-03);
+    --color-search-subnavigation-background: var(--color-darkmode-04);
+    --color-secondary-navigation-menu-background: var(--color-darkmode-04);
+    --color-secondary-navigation-notebook-background: var(--color-darkmode-03);
+    --color-secondary-navigation-notebook-indicator: var(--color-darkmode-01);
+    --color-secondary-navigation-notebook-text: var(--color-text);
+    --color-secondary-navigation-reverse-background: var(--color-darkmode-04);
+    --color-secondary-navigation-reverse-border: var(--color-border);
+    --color-secondary-navigation-reverse-indicator: var(--color-darkmode-01);
+    --color-secondary-navigation-reverse-text: var(--color-text);
+    --color-selectable-background: var(--color-darkmode-03);
+    --color-selectable-selected-background: var(--color-darkmode-02);
+    --color-special-numeric-green: var(--color-darkmode-01);
+    --color-special-numeric-red: var(--color-red-03);
+    --color-sticky-note-background: var(--color-darkmode-04);
+    --color-table-border: var(--color-darkmode-03);
+    --color-table-element-background: var(--color-background);
+    --color-table-header: var(--color-darkmode-04);
+    --color-table-header-border: var(--color-darkmode-04);
+    --color-table-hover: var(--color-darkmode-03);
+    --color-table-row-border: var(--color-darkmode-03);
+    --color-tabs-mobile-background: var(--color-darkmode-03);
+    --color-text-active: var(--color-darkmode-06);
+    --color-text-cancel-hover: var(--color-link-default-hover);
+    --color-text-cancel: var(--color-link-default);
+    --color-text-clicker: var(--color-text);
+    --color-text-darker-gray: var(--color-text-understated);
+    --color-text-less-understated: var(--color-text-understated);
+    --color-text-less-understated: rgba(255, 255, 255, 0.6);
+    --color-text-more-understated: var(--color-text-understated);
+    --color-text-reverse: var(--color-text);
+    --color-text-selected: var(--color-darkmode-01);
+    --color-text-understated-reverse: var(--color-text-understated);
+    --color-text-understated: rgba(255, 255, 255, 0.6);
+    --color-text-overstated: rgba(255, 255, 255, 1);
+    --color-toggle-selected: var(--color-background-selected);
+    --color-tooltip-background: var(--color-background);
+    --color-tooltip-border: var(--color-border);
+    --color-tooltip: var(--color-text);
+    --color-translation-highlight: var(--color-darkmode-02);
+    --color-translation-translated-highlight: var(--color-darkmode-03);
+    --color-vertical-form-input-background: var(--color-background);
+    --color-actionsheet-title: var(--color-darkmode-04);
+    --color-form-toggle-button: var(--color-greyscale-01);
+    --color-form-toggle-button-background: var(--color-darkmode-04);
+    --color-form-toggle-button-active-background: var(--color-darkmode-02);
+    --color-iconbar-background: var(--color-darkmode-04);
+    --color-iconbar: var(--color-darkmode-01);
+    --color-forum-magic-link-background: var(--color-darkmode-04);
+    --color-forum-magic-link-border: var(--color-border);
+   
+    --misc-forum-box-shadow-allowance: 0
+}
+body.theme_hebridean {
+    --color-background-clicker-active: var(--color-darkmode-04);
+    --color-background-clicker-hover: var(--color-darkmode-03);
+    --color-background-clicker: var(--color-darkmode-02);
+    --color-border: var(--color-darkmode-06);
+    --color-input-focus: var(--color-darkmode-03);
+    --color-input: var(--color-text);
+    --color-text: rgba(255, 255, 255, 0.8);
+    --color-link-default: var(--color-darkmode-01);
+    --color-link-default-hover: var(--color-special-kirk-blue);
+    --color-special-error-red: var(--color-red-02);
+    --color-splash-background: #191c27;
+    --color-splash-interstitial-background: #181e2a --color-splash-box: #191c27;
+    --color-splash-box-background: #191c27;
+    --color-splash-input-background: var(--color-darkmode-05);
+    --color-splash-input-border: var(--color-border);
+    --color-splash-h2: var(--color-darkmode-01);
+}
+html {
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.4285714286;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-width: 100vw
+}
+h1{
+    color: white;
+}
+body {
+    min-height: 100vh
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 5px 5%;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+.nav-left .home{
+    
+    display: inline-block;
+    cursor: pointer;
+}
+.nav-left .post{
+    display: inline-block;
+    cursor: pointer;
+}
+.profile img{
+    width: 40px ;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.feed{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+input[type=text],
+input[type=password],
+input[data-input-type=password] {
+    border: 1px solid var(--color-splash-input-border);
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: var(--color-splash-input-background);
+    color: var(--color-input);
+    border-radius: 0;
+    font-size: 16px
+}
+
+.basic_box {
+    background-color: var(--color-splash-box-background);
+    color: var(--color-text);
+    margin-bottom: 32px;
+    padding: 20px;
+    box-shadow: var(--global-box-shadow-size) var(--global-box-shadow-size) 0 0 var(--color-border-dark);
+    border-radius: 1px;
+    border: 1px solid var(--color-infobox-content-border)
+}
+
+form.stacked_form input[type=text],
+form.stacked_form input[type=password],
+form.stacked_form input[data-input-type=password],
+form.stacked_form select,
+form.stacked_form label {
+    width: 100%
+}
+
+form.stacked_form input+select,
+form.stacked_form input+button,
+form.stacked_form input+input {
+    margin-top: 20px
+}
+
+form.stacked_form fieldset,
+form.stacked_form .splash_page__field,
+form.stacked_form .splash_page__submit {
+    margin-bottom: 20px
+}
+
+form.stacked_form button[type=submit],
+form.stacked_form input[type=submit] {
+    float: right
+}
+
+form.stacked_form label {
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    height: 16px;
+    padding-bottom: 4px
+}
+
+form.stacked_form label.label--inline {
+    display: inline;
+    padding-bottom: 0;
+    font-size: 1.1428571429rem !important
+}
+
+form.stacked_form button.splash_page__reveal {
+    margin-top: 0 !important;
+    font-size: 14px;
+    line-height: 38px;
+    color: var(--color-text);
+    flex-shrink: 0;
+    flex-grow: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    display: block;
+    text-align: right;
+    width: auto !important
+}
+
+form.stacked_form [data-password-reveal] {
+    display: none
+}
+
+form.stacked_form input[data-input-type=password] {
+    width: 100%;
+    border: none;
+    background-image: none
+}
+
+form.stacked_form input[data-input-type=password]:focus+button.splash_page__reveal {
+    background-color: var(--color-input-focus)
+}
+
+.stacked_form__field {
+    margin-bottom: 20px
+}
+
+.clicker--large button,
+button.clicker--large,
+a.clicker--large {
+    display: inline-block;
+    box-shadow: var(--global-box-shadow-size) var(--global-box-shadow-size) 0 0 var(--color-border-dark);
+    font-size: 12px;
+    height: 36px;
+    line-height: 36px;
+    border: 1px solid var(--color-border-clicker);
+    background-color: var(--color-background-clicker);
+    text-decoration: none;
+    margin-top: -4px;
+    margin-left: -4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: auto !important;
+    white-space: nowrap;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: var(--color-text);
+    font-size: 14px
+}
+
+.clicker--large button img,
+button.clicker--large img,
+a.clicker--large img {
+    margin-right: 8px;
+    width: 16px;
+    height: 16px
+}
+
+.clicker--large button:active,
+button.clicker--large:active,
+a.clicker--large:active {
+    box-shadow: none;
+    margin-top: 0;
+    margin-right: 0
+}
+
+.clicker--large button:hover,
+button.clicker--large:hover,
+a.clicker--large:hover {
+    background-color: var(--color-background-clicker-hover)
+}
+
+body.splash {
+    background-color: var(--color-splash-background);
+    background-repeat: repeat;
+    background-size: 80%
+}
+
+.splash_page__field__border {
+    display: flex;
+    border: 1px solid var(--color-splash-input-border)
+}
+
+form:not(.with_reveal_password) [data-password-reveal=show] {
+    display: block
+}
+
+form.with_reveal_password [data-password-reveal=hide] {
+    display: block
+}
+
+
+.splash_page__login {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-align-items: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-justify-content: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 100%;
+    min-height: 100vh;
+    -ms-flex-grow: 0;
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+    -ms-flex-shrink: 1;
+    -webkit-flex-shrink: 1;
+    flex-shrink: 1;
+    z-index: 3;
+    width: 100%
+}
+
+.splash_page__login .basic_box {
+    max-width: 336px;
+    padding: 48px;
+    box-sizing: content-box;
+    margin: 40px;
+    position: relative
+}
+
+
+
+
